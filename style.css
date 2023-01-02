@@ -1,0 +1,167 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    /* width: 98%; */
+    margin: 5%  5%;
+    padding: 5%;
+}
+
+
+
+h1{
+    background:gold;
+    font-weight: 900;
+}
+
+
+h2{
+    background: #9CFF2E;
+    font-weight: 300;
+}
+
+button{
+    background: #2DCDDF;
+}
+
+button:hover{
+    background:#F2DEBA ;
+    color:#DC0000;
+}
+
+button:active{
+    background: #58287F;
+    color:#F1F7B5;
+}
+h3{
+    background:#BBE4E9 ;
+    display: inline-block;
+}
+.anclas{
+    display:flex;
+    justify-content: space-around;
+    background: #7DE5ED;
+    padding: 10px;
+}
+a{
+    background:#FED049;
+    color: #3E6D9C;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+.a1{ 
+    display: inline-block;
+    text-decoration: none;
+    background:salmon;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.a1:hover{
+    background: royalblue;
+}
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.nav-boton{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0px;
+    border: 2px solid #fff;
+    display: none;
+
+}
+
+
+.contenedor{
+    width: 80%;
+    height: 1300px;
+    background: #ff5C29;
+    margin: 50px auto;
+    display: flex;
+    /* padding: 10px; */
+    /* flex-direction:row; */
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* align-items Posiciona verticalmente las cajas; */
+    /* align-items:stretch;  */
+    /* align-content funciona para alinear cajas inicio final centro */
+    /* align-content:space-around ; */
+
+
+}
+
+
+.hijo{
+    background: #2f465f;
+    width: 150px;
+    height: 100px;
+    color: #fff;
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    /* font-size permite alinear texto dentro de la caja hija */
+    text-align: center;
+    /* flex-grow: 1;
+    flex-shrink: 0; */
+    flex: 1 1 auto;
+    /* order:2; */
+    border-radius: 7px;
+    /* vertical-align:text-bottom; */
+    /* position: absolute;
+    top:50%; */
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.otro{
+    /* order:1 ; */
+    align-self: stretch;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1100px){
+    nav{
+        background: black;
+        flex-direction: column;
+    }
+    .a1{
+        margin: 5px;
+    }
+    .nav-boton{ 
+        display: inline-block;
+}
+}
